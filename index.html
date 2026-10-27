@@ -24,7 +24,7 @@
             <p class="text-muted mb-4">Admin Management Portal</p>
             <form id="adminLoginForm">
                 <div class="mb-3 text-start">
-                    <label class="form-label fw-semibold">Username</label>
+                    <label class="form-label fw-semibold">Admin Email</label>
                     <input id="loginUsername" type="email" class="form-control form-control-lg" placeholder="Admin email" autocomplete="username" required>
                 </div>
                 <div class="mb-3 text-start">
@@ -33,7 +33,7 @@
                 </div>
                 <div id="loginError" class="alert alert-danger py-2 d-none">Invalid username or password.</div>
                 <button class="btn btn-primary btn-lg w-100" type="submit"><i class="bi bi-box-arrow-in-right me-2"></i>Login</button>
-                <div class="small text-muted mt-3">Default: <strong>admin</strong> / <strong>admin123</strong></div>
+                <div class="small text-muted mt-3">Sign in to your secure management workspace.</div>
             </form>
         </div>
     </div>
@@ -48,8 +48,13 @@
         </div>
         <div class="py-3 flex-grow-1 overflow-y-auto">
             <a href="#" class="nav-link-custom active" data-page="dashboard"><i class="bi bi-speedometer2"></i><span data-i18n="nav_dashboard">Dashboard</span></a>
-            <a href="#" class="nav-link-custom" data-page="employees"><i class="bi bi-people"></i><span data-i18n="nav_employees">Employees</span></a>
-            <a href="#" class="nav-link-custom" data-page="companies"><i class="bi bi-buildings"></i><span data-i18n="nav_companies">Companies</span></a>
+            <a href="#" class="nav-link-custom" data-page="reminders"><i class="bi bi-bell"></i><span data-i18n="nav_reminders">Reminders</span></a>
+<a href="#" class="nav-link-custom" data-page="worker-search"><i class="bi bi-search"></i><span data-i18n="nav_worker_search">Worker Search</span></a>
+<a href="#" class="nav-link-custom" data-page="employees"><i class="bi bi-people"></i><span data-i18n="nav_company_workers">Company Workers</span></a>
+            <a href="#" class="nav-link-custom" data-page="domestic"><i class="bi bi-house-heart"></i><span data-i18n="nav_domestic">Domestic Workers</span></a>
+<a href="#" class="nav-link-custom" data-page="domestic-payments"><i class="bi bi-wallet2"></i><span data-i18n="nav_domestic_payments">Domestic Payments</span></a>
+<a href="#" class="nav-link-custom" data-page="exit-reentry"><i class="bi bi-airplane"></i><span data-i18n="nav_visa">Exit Re-entry</span></a>
+<a href="#" class="nav-link-custom" data-page="companies"><i class="bi bi-buildings"></i><span data-i18n="nav_companies">Companies</span></a>
             <a href="#" class="nav-link-custom" data-page="payments"><i class="bi bi-cash-stack"></i><span data-i18n="nav_payments">Monthly Payments</span></a>
             <a href="#" class="nav-link-custom" data-page="payment-history"><i class="bi bi-clock-history"></i><span data-i18n="nav_history">Payment History</span></a>
             <a href="#" class="nav-link-custom" data-page="id-expiry"><i class="bi bi-card-heading"></i><span data-i18n="nav_id_expiry">ID Expiry</span></a>
@@ -70,8 +75,13 @@
         <div class="offcanvas-body p-0">
             <div class="py-2">
                 <a href="#" class="nav-link-custom active" data-page="dashboard"><i class="bi bi-speedometer2"></i><span data-i18n="nav_dashboard">Dashboard</span></a>
-                <a href="#" class="nav-link-custom" data-page="employees"><i class="bi bi-people"></i><span data-i18n="nav_employees">Employees</span></a>
-                <a href="#" class="nav-link-custom" data-page="companies"><i class="bi bi-buildings"></i><span data-i18n="nav_companies">Companies</span></a>
+                <a href="#" class="nav-link-custom" data-page="reminders"><i class="bi bi-bell"></i><span data-i18n="nav_reminders">Reminders</span></a>
+<a href="#" class="nav-link-custom" data-page="worker-search"><i class="bi bi-search"></i><span data-i18n="nav_worker_search">Worker Search</span></a>
+<a href="#" class="nav-link-custom" data-page="employees"><i class="bi bi-people"></i><span data-i18n="nav_company_workers">Company Workers</span></a>
+                <a href="#" class="nav-link-custom" data-page="domestic"><i class="bi bi-house-heart"></i><span data-i18n="nav_domestic">Domestic Workers</span></a>
+<a href="#" class="nav-link-custom" data-page="domestic-payments"><i class="bi bi-wallet2"></i><span data-i18n="nav_domestic_payments">Domestic Payments</span></a>
+<a href="#" class="nav-link-custom" data-page="exit-reentry"><i class="bi bi-airplane"></i><span data-i18n="nav_visa">Exit Re-entry</span></a>
+<a href="#" class="nav-link-custom" data-page="companies"><i class="bi bi-buildings"></i><span data-i18n="nav_companies">Companies</span></a>
                 <a href="#" class="nav-link-custom" data-page="payments"><i class="bi bi-cash-stack"></i><span data-i18n="nav_payments">Monthly Payments</span></a>
                 <a href="#" class="nav-link-custom" data-page="payment-history"><i class="bi bi-clock-history"></i><span data-i18n="nav_history">Payment History</span></a>
                 <a href="#" class="nav-link-custom" data-page="id-expiry"><i class="bi bi-card-heading"></i><span data-i18n="nav_id_expiry">ID Expiry</span></a>
@@ -91,7 +101,7 @@
                 </button>
                 <div class="input-group d-none d-md-flex" style="width: 250px;">
                     <span class="input-group-text bg-light border-end-0"><i class="bi bi-search text-muted"></i></span>
-                    <input type="text" id="globalSearch" class="form-control bg-light border-start-0" placeholder="Global Search..." data-i18n-ph="global_search">
+                    <input type="text" id="globalSearch" class="form-control bg-light border-start-0" placeholder="Search Iqama, then press Enter" data-i18n-ph="global_search">
                 </div>
             </div>
 
